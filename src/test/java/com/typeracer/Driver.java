@@ -21,7 +21,7 @@ public class Driver {
 		driver= new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://play.typeracer.com/?rt=2a83iiynzo");
+		driver.get("https://play.typeracer.com?rt=uv56cdgl");
 		
 		return driver;
 	}

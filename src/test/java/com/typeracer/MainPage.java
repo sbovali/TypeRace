@@ -19,6 +19,9 @@ public class MainPage {
 	@FindBy(xpath="(//input[@class='gwt-PasswordTextBox'])[1]")
 	WebElement password;
 	
+	@FindBy(xpath="(//button[@class='gwt-Button'])[1]")
+	WebElement signInButton;
+	
 	@FindBy(xpath="//table[@class='navControls']")
 	WebElement joinRace;
 	

@@ -14,7 +14,7 @@ public class AutomatePage {
 		mp.signIn.click();
 		mp.userName.sendKeys("brkovl");
 		mp.password.sendKeys("abcdef");
-		
+		mp.signInButton.click();
 		mp.joinRace.click();
 		Thread.sleep(1000);
 		String text=mp.text.getText();
@@ -22,7 +22,7 @@ public class AutomatePage {
 		String[] textArray=text.split(" ");
 		
 		System.out.println(Arrays.toString(textArray));
-		
+
 		WebDriverWait wait=new WebDriverWait(Driver.getDriver(), 60);
 		
 		wait.until(ExpectedConditions.elementToBeClickable(mp.textType));
